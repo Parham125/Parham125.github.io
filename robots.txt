@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /assets/temp/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.md$
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Crawl-delay: 1
+
+Sitemap: https://parham125.github.io/sitemap.xml
