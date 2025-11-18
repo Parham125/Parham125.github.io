@@ -49,48 +49,6 @@ pointer-events:none;
 z-index:0;
 overflow:hidden;
 }
-.particles::before,.particles::after {
-content:"";
-position:absolute;
-width:6px;
-height:6px;
-background:rgba(139,92,246,0.6);
-border-radius:50%;
-animation:float 20s infinite;
-box-shadow:0 0 10px rgba(139,92,246,0.8),0 0 20px rgba(139,92,246,0.4);
-}
-.particles::before {
-top:20%;
-left:10%;
-animation-delay:0s;
-}
-.particles::after {
-top:60%;
-right:15%;
-animation-delay:5s;
-width:5px;
-height:5px;
-background:rgba(99,102,241,0.5);
-box-shadow:0 0 8px rgba(99,102,241,0.7),0 0 16px rgba(99,102,241,0.3);
-}
-@keyframes float {
-0%,100% {
-transform:translateY(0) translateX(0);
-opacity:0.4;
-}
-25% {
-transform:translateY(-100px) translateX(50px);
-opacity:0.8;
-}
-50% {
-transform:translateY(-50px) translateX(100px);
-opacity:0.3;
-}
-75% {
-transform:translateY(-150px) translateX(25px);
-opacity:0.6;
-}
-}
 .stars {
 position:fixed;
 top:0;
@@ -174,7 +132,7 @@ background:#fff;
 border-radius:50%;
 box-shadow:0 0 8px rgba(255,255,255,0.8),0 0 16px rgba(139,92,246,0.6);
 opacity:0;
-animation:shootingStar 8s linear infinite;
+animation:shootingStar 25s linear infinite;
 z-index:0;
 pointer-events:none;
 }
@@ -184,27 +142,29 @@ position:absolute;
 width:150px;
 height:2px;
 background:linear-gradient(270deg,rgba(255,255,255,0.8),rgba(139,92,246,0.4),transparent);
-right:-3px;
-top:50%;
-transform:translateY(-50%) rotate(45deg);
+right:1px;
+top:0px;
+transform:rotate(135deg);
 transform-origin:right center;
 }
 @keyframes shootingStar {
 0% {
 opacity:0;
 top:-5%;
-right:100%;
+left:100%;
 }
-5% {
+2% {
 opacity:1;
 }
-95% {
+28% {
 opacity:0;
+top:105%;
+left:-10%;
 }
 100% {
 opacity:0;
 top:105%;
-right:-10%;
+left:-10%;
 }
 }
 .cursor {
