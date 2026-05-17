@@ -145,7 +145,7 @@ main {
 padding-bottom:120px;
 }
 section {
-padding:60px 0;
+padding:72px 0;
 border-top:1px solid var(--border);
 animation:fadeUp 0.6s ease-out 0.15s both;
 }
@@ -161,7 +161,7 @@ margin-bottom:32px;
 .about-content {
 display:flex;
 flex-direction:column;
-gap:14px;
+gap:18px;
 }
 .about-content p {
 font-size:1.02rem;
@@ -221,9 +221,8 @@ border-top:1px solid var(--border);
 }
 .project-entry-header {
 display:flex;
-align-items:baseline;
-justify-content:space-between;
-gap:16px;
+align-items:center;
+gap:12px;
 margin-bottom:8px;
 flex-wrap:wrap;
 }
@@ -287,9 +286,7 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:12px;
 }
 .stat-card {
-background:var(--surface);
 border-radius:10px;
-border:1px solid var(--border);
 overflow:hidden;
 }
 .stat-card img {
