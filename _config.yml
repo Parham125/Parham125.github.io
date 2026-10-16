@@ -6,11 +6,23 @@ lang: en
 author: Parham
 timezone: Asia/Tehran
 permalink: /blog/:title/
+# fallback share image for pages and posts without their own cover
+default_image: /assets/images/og-card.png
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 defaults:
+  - scope:
+      path: google0c3c770cca9e752b.html
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-card.png
+      twitter:
+        card: summary_large_image
   - scope:
       path: ""
       type: posts

@@ -25,6 +25,12 @@ content:
       - name: description
         label: Description
         type: text
+      - name: image
+        label: Cover image
+        type: image
+      - name: image_alt
+        label: Cover image description
+        type: string
       - name: tags
         label: Tags
         type: string

@@ -7,6 +7,9 @@ layout: default
 <h1>{{ page.title | escape }}</h1>
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time><span aria-hidden="true"> · </span>{{ minutes }} min read</p>
 </header>
+{%- if page.image and page.image != site.default_image %}
+<figure class="cover"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="1600" height="900" fetchpriority="high" decoding="async"></figure>
+{%- endif %}
 <div class="prose">
 {{ content }}
 </div>

@@ -1,0 +1,9 @@
+<figure class="figure">
+<picture>
+{%- if include.webp %}<source srcset="{{ include.webp | relative_url }}" type="image/webp">{% endif %}
+<img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy" decoding="async">
+</picture>
+{%- if include.caption %}
+<figcaption>{{ include.caption }}</figcaption>
+{%- endif %}
+</figure>
