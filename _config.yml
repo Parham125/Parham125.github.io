@@ -1,9 +1,16 @@
 title: Parham
-description: Python developer building APIs, Discord bots and automation, deployed on a Linux server he runs himself.
+tagline: Full-stack developer
+description: Parham builds full apps in Rust, Go and Python, from the interface to the database, deployed on a Linux server he runs himself.
 url: https://parham.is-a.dev
 baseurl: ""
 lang: en
-author: Parham
+author:
+  name: Parham
+  url: https://parham.is-a.dev
+social:
+  name: Parham
+  links:
+    - https://github.com/Parham125
 timezone: Asia/Tehran
 permalink: /blog/:title/
 # fallback share image for pages and posts without their own cover

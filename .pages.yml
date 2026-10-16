@@ -24,7 +24,9 @@ content:
         required: true
       - name: description
         label: Description
+        description: Shown in Google results and share cards. Aim for 120 to 160 characters.
         type: text
+        required: true
       - name: image
         label: Cover image
         type: image
