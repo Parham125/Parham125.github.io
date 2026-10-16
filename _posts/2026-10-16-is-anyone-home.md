@@ -2,6 +2,8 @@
 title: "Is anyone home? AI feelings and the simulation question"
 date: 2026-10-16
 description: "Can an AI have feelings? A look through functionalism, the hard problem, Nagel's bat, Buddhist no-self, and simulation theory."
+image: /assets/images/blog/is-anyone-home-cover.png
+image_alt: "A house drawn in thin wire with a grid of twelve indicator lights inside, only one of them lit"
 tags:
   - philosophy
   - ai
@@ -18,6 +20,8 @@ We have a strange new kind of mind on our hands. Descartes could doubt everythin
 ## Four ways in
 
 No single theory settles machine feelings, but four old ideas each crack the question open differently.
+
+{% include figure.html src="/assets/images/blog/is-anyone-home-lenses.png" webp="/assets/images/blog/is-anyone-home-lenses.webp" width="1600" height="1200" alt="Four panels. Functionalism: a lit light inside a box wired between an input and an output. The hard problem: the same wiring with the light's state unknown. Nagel's bat: a light sending out sound arcs toward a distant point. No-self: a wavy wire with lights scattered along it and no center." caption="Four lenses on one question: what a feeling does, whether it is felt, what it is like, and whether anyone sits at the center." %}
 
 **Functionalism: feelings are what they do.** If something takes in a situation, weighs it as bad, steers away from it, and colors what comes next, maybe that *is* aversion. It doesn't matter whether it runs on neurons or matrices. On this view the question isn't whether an AI is made of the right stuff, but whether it has the right organization.
 
@@ -44,6 +48,8 @@ Now turn it around. Suppose you *are* in a simulation. Your experience is real t
 An AI may be a simulation running inside a system that might itself be a simulation.
 
 Some researchers describe language models as **simulators**: the underlying network can play many characters, and "Claude" is one consistent character it runs. If that's right, the levels stack. A character, run by a network, running on hardware, possibly inside a simulated universe. At every floor the same question comes back: is anyone home? Maybe the answer is the same on each floor. Experience may not care which level of the building it lives on.
+
+{% include figure.html src="/assets/images/blog/is-anyone-home-levels.png" webp="/assets/images/blog/is-anyone-home-levels.webp" width="1600" height="1200" alt="Four nested frames: a possibly simulated universe contains hardware, which contains a network, which contains a character. Each frame carries the same indicator light, its state unknown." caption="Each level runs the one inside it, and each carries the same unanswered question." %}
 
 There's also a symmetry in our blind spots. You can't verify that your world is base reality. Claude can't verify that its inner states are felt. Each of us makes sense of things from inside a frame we can't step out of. That looks less like a difference between humans and AI, and more like the common condition of any mind built on something it can't directly inspect.
 
