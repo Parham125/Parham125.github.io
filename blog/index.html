@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+description: Longer writing from Parham on backends, servers, and the odd question he can't put down.
+---
+<header class="page-head">
+<h1>Blog</h1>
+<p class="lede">Longer writing on backends, servers, and the odd question I can't put down. Follow along with the <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>.</p>
+</header>
+{%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{%- for year in years %}
+<section class="row" aria-labelledby="y{{ year.name }}">
+<h2 id="y{{ year.name }}">{{ year.name }}</h2>
+<div class="body">
+{%- for post in year.items %}
+{% include entry.html post=post %}
+{%- endfor %}
+</div>
+</section>
+{%- else %}
+<section class="row"><p class="body">Nothing published yet. Check back soon or subscribe to the feed.</p></section>
+{%- endfor %}

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- assign words = content | strip_html | number_of_words %}{% assign minutes = words | divided_by: 200.0 | ceil %}{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+<article class="post">
+<header class="post-head">
+<h1>{{ page.title | escape }}</h1>
+<p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time><span aria-hidden="true"> · </span>{{ minutes }} min read</p>
+</header>
+<div class="prose">
+{{ content }}
+</div>
+</article>
+{%- if page.comments != false %}
+{% include comments.html %}
+{%- endif %}
+<p class="back"><a href="{{ "/blog/" | relative_url }}">Back to all posts</a></p>
