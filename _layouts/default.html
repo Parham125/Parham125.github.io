@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en" }}" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1A1D21">
+<script>try{if(localStorage.getItem("theme")==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=theme-color]").content="#E4E5E0"}}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap">
+<link rel="stylesheet" href="{{ "/assets/css/site.css" | relative_url }}">
+{% seo %}
+{% feed_meta %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+{%- if page.url == "/" %}{% assign base = "" %}{% assign blog = "#writing" %}{% else %}{% assign base = "/" %}{% assign blog = "/blog/" %}{% endif %}
+<header class="bar wrap">
+<a class="mark" href="{{ "/" | relative_url }}">Parham</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="{{ base }}#about">About</a></li>
+<li><a href="{{ base }}#work">Work</a></li>
+<li><a href="{{ base }}#skills">Skills</a></li>
+<li><a href="{{ blog }}"{% if page.url == "/blog/" or page.layout == "post" %} aria-current="page"{% endif %}>Blog</a></li>
+<li><a href="{{ base }}#contact">Contact</a></li>
+</ul>
+</nav>
+<button class="theme" type="button" aria-label="Switch to light mode">
+<svg class="sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+<svg class="moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+</button>
+</header>
+<main id="main" class="wrap">
+{{ content }}
+</main>
+<footer class="foot wrap">
+<p>Parham, {{ site.time | date: "%Y" }}. Served from GitHub Pages.</p>
+</footer>
+<script src="{{ "/assets/js/site.js" | relative_url }}" defer></script>
+</body>
+</html>

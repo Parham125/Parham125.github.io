@@ -1,116 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Parham - Python developer building backends, APIs, and Discord bots. Available for freelance."/>
-    <meta name="keywords" content="parham, python, developer, backend, flask, docker, discord bots, freelance"/>
-    <meta name="author" content="Parham"/>
-    <meta name="theme-color" content="#e8b84b"/>
-    <title>Parham - Python Developer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <aside class="sidebar">
-        <div class="sidebar-top">
-            <p class="name">Parham</p>
-            <p class="role">Python Developer</p>
-        </div>
-        <nav class="sidebar-nav">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="sidebar-bottom">
-            <p class="hire-line">Taking freelance work.<br><a href="https://www.upwork.com/freelancers/~0176c7287214622ee0" target="_blank">Hire on Upwork</a></p>
-            <div class="sidebar-links">
-                <a href="mailto:hi@parham125.xyz">hi@parham125.xyz</a>
-                <a href="https://github.com/Parham125/" target="_blank">GitHub</a>
-                <a href="https://discord.gg/Z3QsJTvwVD/" target="_blank">Discord</a>
-                <a href="https://youtube.com/@Parham1258" target="_blank">YouTube</a>
-            </div>
-        </div>
-    </aside>
-
-    <main class="content">
-        <section id="about">
-            <div class="section-label">
-                <h2>About</h2>
-            </div>
-            <div class="about-text">
-                <p>I'm a Python developer focused on backend systems: APIs, databases, and automation. I run my own Linux server with Docker and NGINX, which keeps me grounded in real deployment rather than just local dev.</p>
-                <p>I take freelance work seriously and communicate clearly. If you have something to build, I'm straightforward to work with. Reach out via email or Upwork.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="section-label">
-                <h2>Skills</h2>
-            </div>
-            <div class="skills-list">
-                <div class="skill-row">
-                    <span class="skill-name">Python</span>
-                    <span class="skill-area">Backend, bots, automation</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Flask</span>
-                    <span class="skill-area">Web APIs, server-side</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">SQLAlchemy + SQLite</span>
-                    <span class="skill-area">Database layer</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Docker + NGINX</span>
-                    <span class="skill-area">Container deployment, reverse proxy</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Linux</span>
-                    <span class="skill-area">Self-hosted infrastructure</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Disnake</span>
-                    <span class="skill-area">Discord bots</span>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-name">Git, HTML, CSS, JS</span>
-                    <span class="skill-area">Tooling and frontend basics</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="section-label">
-                <h2>Projects</h2>
-            </div>
-            <div class="project-list">
-                <div class="project-entry">
-                    <span class="project-num">01</span>
-                    <div class="project-body">
-                        <h3>EuroFusion Hosting</h3>
-                        <p>Python-based hosting platform backend with a structured database layer and admin tooling.</p>
-                        <p class="project-tech">Python · Flask · SQLAlchemy</p>
-                    </div>
-                </div>
-                <div class="project-entry">
-                    <span class="project-num">02</span>
-                    <div class="project-body">
-                        <h3>Home Lab</h3>
-                        <p>Self-hosted server running Docker containers on Linux with NGINX reverse proxy for internal services.</p>
-                        <p class="project-tech">Docker · Linux · NGINX</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="section-label">
-                <h2>Contact</h2>
-            </div>
-            <a class="big-email" href="mailto:hi@parham125.xyz">hi@parham125.xyz</a>
-            <p class="contact-note">Also available on <a href="https://www.upwork.com/freelancers/~0176c7287214622ee0" target="_blank">Upwork</a></p>
-        </section>
-    </main>
-</body>
-</html>
+---
+layout: default
+---
+<section class="hero">
+<h1>I build backends: everything between the click and the database.</h1>
+<p class="lede">Python developer. APIs, Discord bots and automation, deployed on a Linux server I run myself.</p>
+<figure class="stack">
+<ol>
+<li style="--i: 0"><span class="led" aria-hidden="true"></span><strong>Browser</strong><span>sends the request</span></li>
+<li style="--i: 1"><span class="led" aria-hidden="true"></span><strong>NGINX</strong><span>reverse proxy</span></li>
+<li style="--i: 2"><span class="led" aria-hidden="true"></span><strong>Docker</strong><span>isolated container</span></li>
+<li style="--i: 3"><span class="led" aria-hidden="true"></span><strong>Flask</strong><span>the API</span></li>
+<li style="--i: 4"><span class="led" aria-hidden="true"></span><strong>SQLite</strong><span>the data</span></li>
+</ol>
+<figcaption>How a request travels through the stack I deploy.</figcaption>
+</figure>
+</section>
+<section class="row" id="about">
+<h2>About</h2>
+<div class="body">
+<p>I'm a Python developer focused on backend systems: APIs, databases, and automation. I run my own Linux server with Docker and NGINX, which keeps me grounded in real deployment rather than just local dev.</p>
+<p>I take freelance work seriously and communicate clearly. If you have something to build, I'm straightforward to work with. Reach out by email.</p>
+</div>
+</section>
+<section class="row" id="work">
+<h2>Work</h2>
+<div class="body">
+<article class="work">
+<h3>EuroFusion Hosting</h3>
+<p>Python-based hosting platform backend with a structured database layer and admin tooling.</p>
+<ul class="tags" aria-label="Built with"><li>Python</li><li>Flask</li></ul>
+</article>
+<article class="work">
+<h3>Home Lab</h3>
+<p>Self-hosted server running Docker containers on Linux with NGINX reverse proxy for internal services.</p>
+<ul class="tags" aria-label="Built with"><li>Docker</li><li>Linux</li><li>NGINX</li></ul>
+</article>
+</div>
+</section>
+<section class="row" id="skills">
+<h2>Skills</h2>
+<dl class="body skills">
+<div><dt>Python</dt><dd>Backend, bots, automation</dd></div>
+<div><dt>Flask</dt><dd>Web APIs, server-side</dd></div>
+<div><dt>SQLite</dt><dd>Database layer</dd></div>
+<div><dt>Docker and NGINX</dt><dd>Container deployment, reverse proxy</dd></div>
+<div><dt>Linux</dt><dd>Self-hosted infrastructure</dd></div>
+<div><dt>Disnake</dt><dd>Discord bots</dd></div>
+<div><dt>Git, HTML, CSS, JS</dt><dd>Tooling and frontend basics</dd></div>
+</dl>
+</section>
+<section class="row" id="writing">
+<h2>Writing</h2>
+<div class="body">
+{%- for post in site.posts limit: 3 %}
+{% include entry.html post=post %}
+{%- else %}
+<p>No posts yet.</p>
+{%- endfor %}
+<p class="more"><a href="{{ "/blog/" | relative_url }}">All posts</a></p>
+</div>
+</section>
+<section class="row" id="contact">
+<h2>Contact</h2>
+<div class="body">
+<p><a class="email" href="mailto:parham125889@gmail.com">parham125889@gmail.com</a></p>
+<p><a href="https://github.com/Parham125/">GitHub</a></p>
+</div>
+</section>

@@ -1,0 +1,5 @@
+<article class="entry">
+<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>
+<h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h3>
+<p>{% if include.post.description %}{{ include.post.description | escape }}{% else %}{{ include.post.excerpt | strip_html | strip | truncatewords: 40 }}{% endif %}</p>
+</article>
