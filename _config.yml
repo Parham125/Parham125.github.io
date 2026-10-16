@@ -1,3 +1,33 @@
-theme: jekyll-theme-slate
 title: Parham
-description: Parham
+description: Python developer building APIs, Discord bots and automation, deployed on a Linux server he runs himself.
+url: https://parham.is-a.dev
+baseurl: ""
+lang: en
+author: Parham
+timezone: Asia/Tehran
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+giscus:
+  repo: Parham125/parham125.github.io
+  repo_id: R_kgDOHfpLxw
+  category: Announcements
+  category_id: DIC_kwDOHfpLx84DIo76
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .pages.yml
+  - .github
+  - node_modules
